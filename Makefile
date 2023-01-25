@@ -1,6 +1,5 @@
 main: main.o Entry.o Errors.o Process.o Exit.o
 	cc -Wall main.o Entry.o Errors.o Process.o Exit.o -o main	
-
 main.o: main.c
 	cc -c -Wall main.c
 
@@ -17,4 +16,4 @@ Exit.o: Exit.c Exit.h
 	cc -c -Wall Exit.c
 
 clean:
-	rm main main.o Entry.o Errors.o Process.o Exit.o
+	rm Entry.o Errors.o Process.o Exit.o main.o
