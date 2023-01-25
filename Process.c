@@ -20,7 +20,6 @@ void games(char matrix[3][3], char n, FILE *out){
     int x,y;
     char Copia[3][3];
 
-
     if(won(matrix, 'X') == 1){          //se o vencedor for X ele retorna
         return;
     }
@@ -42,7 +41,7 @@ void games(char matrix[3][3], char n, FILE *out){
                 if(n == 'O'){
                     games(Copia, 'X', out);
                     Copia[x][y] = 'B';
-                }else{
+                }else {
                     games(Copia, 'O', out);
                     Copia[x][y] = 'B';
                 }

@@ -1,13 +1,13 @@
 main: main.o Entry.o Errors.o Process.o Exit.o
 	cc -Wall main.o Entry.o Errors.o Process.o Exit.o -o main	
 
-main.0: main.c
+main.o: main.c
 	cc -c -Wall main.c
 
 Entry.o: Entry.c Entry.h
 	cc -c -Wall Entry.c
 
-Prrors.o: Errors.c Errors.h
+Errors.o: Errors.c Errors.h
 	cc -c -Wall Errors.c
 
 Process.o: Process.c Process.h
